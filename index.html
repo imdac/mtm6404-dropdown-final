@@ -25,35 +25,17 @@
 </head>
 <body>
   <main id="app">
-    <div class="dropdown">
-      <button type="button" 
-              id="dropdownMenuButton1" 
-              class="btn btn-secondary dropdown-toggle" 
-              :aria-expanded="expanded"
-              @click="toggle">
-        Dropdown
-      </button>
-      <ul class="dropdown-menu" :class="{show: expanded}" aria-labelledby="dropdownMenuButton1">
-        <li><a class="dropdown-item" href="#">One</a></li>
-        <li><a class="dropdown-item" href="#">Two</a></li>
-        <li><a class="dropdown-item" href="#">Three</a></li>
-      </ul>
-    </div>
+    <dropdown-button text="Dropdown 1" variant="primary">
+        <dropdown-item>One</dropdown-item>
+        <dropdown-item>Two</dropdown-item>
+        <dropdown-item>Three</dropdown-item>
+    </dropdown-button>
 
-    <div class="dropdown">
-      <button type="button" 
-              id="dropdownMenuButton1" 
-              class="btn btn-secondary dropdown-toggle" 
-              :aria-expanded="expanded"
-              @click="toggle">
-        Dropdown
-      </button>
-      <ul class="dropdown-menu" :class="{show: expanded}" aria-labelledby="dropdownMenuButton1">
-        <li><a class="dropdown-item" href="#">Four</a></li>
-        <li><a class="dropdown-item" href="#">Fiv</a></li>
-        <li><a class="dropdown-item" href="#">Six</a></li>
-      </ul>
-    </div>
+    <dropdown-button text="Dropdown 2">
+        <dropdown-item>Four</dropdown-item>
+        <dropdown-item>Five</dropdown-item>
+        <dropdown-item>Six</dropdown-item>
+    </dropdown-button>
   </main>
 
   <script src="app.js"></script>
