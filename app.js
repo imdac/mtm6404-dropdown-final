@@ -1,15 +1,4 @@
-const app = Vue.createApp({
-  data: function () {
-    return {
-      expanded: false
-    }
-  },
-  methods: {
-    toggle: function () {
-      this.expanded = !this.expanded
-    }
-  }
-})
+const app = Vue.createApp({})
 
 app.component('dropdown-button', {
   props: ['text', 'variant'],
